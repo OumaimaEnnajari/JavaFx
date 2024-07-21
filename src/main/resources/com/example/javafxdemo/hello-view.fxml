@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="226.0" prefWidth="312.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Code" />
+      <TextField fx:id="txtcode" alignment="TOP_RIGHT" prefHeight="19.0" prefWidth="145.0" />
+      <Label text="Désignation" />
+      <TextField fx:id="txtdesignation" />
+      <Label text="Prix" />
+      <TextField fx:id="txtprix" />
+      <Button id="BtnSalam" fx:id="BtnNewArticle" mnemonicParsing="false" onAction="#AddArticle" text="New Article" />
+       <Label fx:id="welcomeText" />
+       <Button onAction="#onHelloButtonClick" text="Hello!" />
+   </children>
+</VBox>
